@@ -1,0 +1,29 @@
+﻿<Window x:Class="Login_Window.Window1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Регистрация" Height="400" Width="400">
+    <Grid Background="#1E1E1E">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Регистрация" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24"/>
+
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" Width="300" Margin="0,20">
+            <Label Content="Имя пользователя:" Foreground="White"/>
+            <TextBox x:Name="TB_Username2" Background="#333333" Foreground="White" BorderBrush="#333333" Margin="0,5"/>
+
+            <Label Content="Пароль:" Foreground="White"/>
+            <PasswordBox x:Name="TB_Password2" Background="#333333" Foreground="White" BorderBrush="#333333" Margin="0,5"/>
+
+            <Label Content="Повторите пароль:" Foreground="White"/>
+            <PasswordBox x:Name="TB_ConfirmPassword" Background="#333333" Foreground="White" BorderBrush="#333333" Margin="0,5"/>
+
+            <Button x:Name="BTN_Register" Content="Зарегистрироваться" Background="#555555" Foreground="White" Margin="0,10" Click="BTN_Register_Click" />
+
+            <TextBlock Text="Уже есть аккаунт?" Foreground="White" HorizontalAlignment="Center" Margin="0,10"/>
+            <Button x:Name="BTN_Login" Content="Войти" Background="Transparent" BorderBrush="{x:Null}" Foreground="White" Click="BTN_Login_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,22 @@
+﻿<Window x:Class="Login_Window.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Авторизация" Height="300" Width="400">
+    <Grid Background="#1E1E1E" Margin="0,0,0,-6">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Авторизация" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24"/>
+
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" Width="200" Margin="0,20">
+            <Label Content="Имя пользователя:" Foreground="White"/>
+            <TextBox x:Name="TB_Username" Background="#333333" Foreground="White" BorderBrush="#333333"/>
+            <Label Content="Пароль:" Foreground="White"/>
+            <PasswordBox x:Name="TB_Password" Background="#333333" Foreground="White" BorderBrush="#333333"/>
+            <Button x:Name= "BTN_Login" Content="Войти" Background="#555555" Foreground="White" Margin="0,10" Click="BTN_Login_Click" />
+            <Button x:Name= "BTN_Create_Account" Content="Еще нет аккаунта?" Background="Transparent" BorderBrush="{x:Null}" Foreground="White" Click="BTN_Create_Account_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
