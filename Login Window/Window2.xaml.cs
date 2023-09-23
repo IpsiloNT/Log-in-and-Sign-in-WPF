@@ -35,8 +35,7 @@ namespace Login_Window
             DataTable table = new DataTable("register"); // В скобках указываем название таблицы
             adapter.Fill(table);
 
-/*            table.Columns["login_user"].ColumnName = "Логин пользователя";
-*/
+
             UsersDataGrid.ItemsSource = table.DefaultView; // Сам вывод 
             database.CloseConnection();
 
